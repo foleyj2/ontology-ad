@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#"
+     xml:base="http://www.semanticweb.org/foley/ontologies/2016/9/msdd"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#coupledTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#coupledTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP111_Production_processes_with_minimal_variation_from_the_target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP111_Production_processes_with_minimal_variation_from_the_target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR111_Manufacture_products_to_target_design_specifications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP112_Throughput_time_variation_reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP112_Throughput_time_variation_reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR112_Deliver_products_on_time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP113_Mean_throughput_time_reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP113_Mean_throughput_time_reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR113_Meet_customer_expected_lead_time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP11_Production_to_maximize_customer_satisfaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP11_Production_to_maximize_customer_satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR11_Maximize_sales_revenue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP12_Elimination_of_non-value_adding_sources_of_cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP12_Elimination_of_non-value_adding_sources_of_cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR12_Minimize_production_costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP1_Manufacturing_System_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP1_Manufacturing_System_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR1_Maximize_long-term_return_on_investment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR111_Manufacture_products_to_target_design_specifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR111_Manufacture_products_to_target_design_specifications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP11_Production_to_maximize_customer_satisfaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR112_Deliver_products_on_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR112_Deliver_products_on_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP11_Production_to_maximize_customer_satisfaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR113_Meet_customer_expected_lead_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR113_Meet_customer_expected_lead_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP11_Production_to_maximize_customer_satisfaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR11_Maximize_sales_revenue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR11_Maximize_sales_revenue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP1_Manufacturing_System_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR121_Reduce_waste_in_direct_labor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR121_Reduce_waste_in_direct_labor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP12_Elimination_of_non-value_adding_sources_of_cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR122_Reduce_waste_in_indirect_labor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR122_Reduce_waste_in_indirect_labor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP12_Elimination_of_non-value_adding_sources_of_cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR123_Minimize_facilities_cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR123_Minimize_facilities_cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP12_Elimination_of_non-value_adding_sources_of_cost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR12_Minimize_production_costs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR12_Minimize_production_costs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP1_Manufacturing_System_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR13_Minimize_investment_over_production_system_lifecycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR13_Minimize_investment_over_production_system_lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#DP1_Manufacturing_System_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR1_Maximize_long-term_return_on_investment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/foley/ontologies/2016/9/msdd#FR1_Maximize_long-term_return_on_investment"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

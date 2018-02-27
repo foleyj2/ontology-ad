@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: msdd.xml 5 2016-10-31 16:08:41Z foley $ -->
+<!-- $URL: https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd.xml $ -->
+<msddnode xmlns="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd"
+	  xmlns:xsi="www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd"
+	  id="1">
+  <fr>Maximize long term return on investment</fr>
+  <pm>Return on Investment over system lifecycle</pm>
+  <dp>Manufacturing System Design</dp>
+  <msddnode id="11">
+    <fr>Maximize sales revenue</fr>
+    <pm>Sales revenue</pm>
+    <dp>Production to maximize customer satisfaction</dp>
+    <couplingid>12</couplingid>
+  </msddnode>
+  <msddnode id="12">
+    <fr>Minimize manufacturing costs</fr>
+    <pm>Manufacturing costs</pm>
+    <dp>Elimination of non-value adding sources of cost</dp>
+    <couplingid>13</couplingid>
+  </msddnode>
+  <msddnode id="13">
+    <fr>Minimize investment over production system lifecycle</fr>
+    <pm>Investment over system lifecycle</pm>
+    <dp>Investment based on a long term strategy</dp>
+  </msddnode>
+</msddnode>

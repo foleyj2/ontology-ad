@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- $Id: msdd.xsd 2 2016-10-29 22:08:46Z foley $ -->
+<!-- $URL: https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd.xsd $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- define some types to reuse -->
+  <xs:simpleType name="ad_id">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]([0-9])*">
+      </xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="ad_id_dotted">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9](.[0-9])*">
+      </xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="rating">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  
+  <!-- definition of simple elements -->
+  <xs:element name="fr" type="xs:string"/>
+  <xs:element name="pm" type="xs:string"/>
+  <xs:element name="dp" type="xs:string"/>
+  <xs:element name="pm_value" type="rating"/> 
+  <xs:element name="couplingid" type="ad_id"/>
+  
+  
+  <!-- definition of attributes -->
+  <xs:attribute name="id" type="ad_id"/>
+  
+  <!-- definition of complex elements --> 
+  
+  <xs:element name="msddnode">
+    <xs:complexType>
+      <xs:attribute ref="id" use="required"/>
+      <xs:sequence>
+	<xs:element ref="fr"/>
+	<xs:element ref="pm"/>
+	<xs:element ref="pm_value"/>
+	<xs:element ref="dp"/>
+	<xs:element ref="couplingid" minOccurs="0" maxOccurs="unbounded"/>
+	<xs:element ref="msddnode" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
