@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<!-- $Id: msdd.xsd 2 2016-10-29 22:08:46Z foley $ -->
-<!-- $URL: https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd.xsd $ -->
+<!-- URL: https://raw.githubusercontent.com/foleyj2/ontology-ad/master/xml/msdd.xsd -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- define some types to reuse -->

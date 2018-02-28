@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- $Id: msdd.xml 5 2016-10-31 16:08:41Z foley $ -->
 <!-- $URL: https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd.xml $ -->
-<msddnode xmlns="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd"
+<msddnode xmlns="https://raw.githubusercontent.com/foleyj2/ontology-ad/master/xml/msdd.xsd"
 	  xmlns:xsi="www.w3.org/2001/XMLSchema-instance"
-	  xsi:schemaLocation="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd"
+	  xsi:schemaLocation="https://raw.githubusercontent.com/foleyj2/ontology-ad/master/xml/msdd.xsd"
 	  id="1">
   <fr>Maximize long term return on investment</fr>
   <pm>Return on Investment over system lifecycle</pm>
