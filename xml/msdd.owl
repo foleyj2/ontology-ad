@@ -8,9 +8,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ad1="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#ad:">
-    <owl:Ontology rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd">
-        <rdfs:comment xml:lang="en">Manufacturing System Design Decomposition developed by David S. Cochran at the &quot;Enterprise Design Leadership Lab&quot; at Indiana University Purdue University Fort Wayne.  Translated into ontology format by Joseph T. Foley.</rdfs:comment>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/foleyj2/ontology-ad/master/xml/msdd">
         <owl:versionInfo xml:lang="en">Version 8.3.  Last Edited 2016-10-28 01:01:07PM</owl:versionInfo>
+        <rdfs:comment xml:lang="en">Manufacturing System Design Decomposition v9.2 developed by David S. Cochran at the &quot;Enterprise Design Leadership Lab&quot; at Indiana University Purdue University Fort Wayne.  Translated into ontology format by Joseph T. Foley.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -91,19 +91,10 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P121_Variance_in_task_completion_time -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P121_Variation_in_task_completion_time -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P121_Variance_in_task_completion_time">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P121_Variation_in_task_completion_time">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P12_Number_of_disruptions_due_to_operators,_Amount_of_interruption_time_for_operators"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P131_Amount_of_time_required_to_service_equipment -->
-
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P131_Amount_of_time_required_to_service_equipment">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P13_Number_of_occurrences_of_unplanned_equipment_downtime,_Amount_of_unplanned_equipment_downtime"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -118,17 +109,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P141_Number_of_occurrences_of_marketplace_shortages -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P142_Parts_to_plan -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P141_Number_of_occurrences_of_marketplace_shortages">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P14_Number_of_disruptions_due_to_material_shortages,_amount_of_interruption_time_for_material_shortages"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P142_Parts_demanded_-_parts_delivered -->
-
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P142_Parts_demanded_-_parts_delivered">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P142_Parts_to_plan">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P14_Number_of_disruptions_due_to_material_shortages,_amount_of_interruption_time_for_material_shortages"/>
     </owl:DatatypeProperty>
     
@@ -185,7 +168,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q1_Number_of_defects_per_n_parts_with_an_assignable_cause -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q1_Number_of_defects_per_n_parts_with_an_assignable_cause">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Process_capability"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Total_cost_of_Scrap_and_First_Pass_Yield"/>
     </owl:DatatypeProperty>
     
 
@@ -193,7 +176,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q2_Difference_between_process_mean_and_target -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q2_Difference_between_process_mean_and_target">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Process_capability"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Total_cost_of_Scrap_and_First_Pass_Yield"/>
     </owl:DatatypeProperty>
     
 
@@ -209,7 +192,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q3_Variance_of_process_output -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-Q3_Variance_of_process_output">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Process_capability"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Total_cost_of_Scrap_and_First_Pass_Yield"/>
     </owl:DatatypeProperty>
     
 
@@ -255,9 +238,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R122_Time_between_identification_adn_contact_of_correct_support_resource -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R122_Time_between_identification_and_contact_of_correct_support_resource -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R122_Time_between_identification_adn_contact_of_correct_support_resource">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R122_Time_between_identification_and_contact_of_correct_support_resource">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R12_Time_between_identification_of_what_the_disruption_is_and_support_resource_understanding_what_the_disruption_is"/>
     </owl:DatatypeProperty>
     
@@ -280,9 +263,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R13_Time_between_support_resource_understanding_what_the_diruption_is_and_problem_resolution -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R13_Time_between_support_resource_understanding_the_disruption_and_problem_resolution -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R13_Time_between_support_resource_understanding_what_the_diruption_is_and_problem_resolution">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R13_Time_between_support_resource_understanding_the_disruption_and_problem_resolution">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-R1_Time_between_occurence_and_resolution_of_disruptions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
@@ -298,19 +281,10 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T1_Inventory_due_to_lot_size_delay -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Percentage_produced_to_takt_time -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T1_Inventory_due_to_lot_size_delay">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Difference_between_production_cycle_time_and_takt_time -->
-
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Difference_between_production_cycle_time_and_takt_time">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Inventory_due_to_process_delay"/>
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Percentage_produced_to_takt_time">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Are_all_cycle_time_less_than_or_equal_to_takt_time_(worker_and_machine)"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -319,17 +293,8 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T23_Difference_between_arrival_and_service_rates -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T23_Difference_between_arrival_and_service_rates">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Inventory_due_to_process_delay"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Are_all_cycle_time_less_than_or_equal_to_takt_time_(worker_and_machine)"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Inventory_due_to_process_delay -->
-
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Inventory_due_to_process_delay">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -337,23 +302,23 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T32_Actual_run_size_-_target_run_size -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T32_Actual_run_size_-_target_run_size">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Inventory_due_to_run_size_delay"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Run_Size"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Inventory_due_to_run_size_delay -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Run_Size -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Inventory_due_to_run_size_delay">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Run_Size">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T4_Inventory_due_to_transportation_delay -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T4_Transportation_time -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T4_Inventory_due_to_transportation_delay">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T4_Transportation_time">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -368,9 +333,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T52_Production_time_lost_due_to_production_resources_interferences_with_each_other -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T52_Production_time_lost_due_to_manufacturing_resources_interferences_with_each_other -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T52_Production_time_lost_due_to_production_resources_interferences_with_each_other">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T52_Production_time_lost_due_to_manufacturing_resources_interferences_with_each_other">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T5_Production_time_lost_due_to_interferences_among_resources"/>
     </owl:DatatypeProperty>
     
@@ -393,9 +358,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Process_capability -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Total_cost_of_Scrap_and_First_Pass_Yield -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Process_capability">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM111_Total_cost_of_Scrap_and_First_Pass_Yield">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM11_Sales_revenue"/>
     </owl:DatatypeProperty>
     
@@ -542,9 +507,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P123_Number_of_disruptions_due_to_operator_allowances,_amount_of_interruption_time_for_worker_allowances -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P123_Number_of_disruptions_due_to_operator_allowances,_amount_of_time_lost_for_worker_allowances -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P123_Number_of_disruptions_due_to_operator_allowances,_amount_of_interruption_time_for_worker_allowances">
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P123_Number_of_disruptions_due_to_operator_allowances,_amount_of_time_lost_for_worker_allowances">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P12_Number_of_disruptions_due_to_operators,_Amount_of_interruption_time_for_operators"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
@@ -560,11 +525,28 @@
     
 
 
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P131_Amount_of_time_required_to_service_equipment_(per_procedure) -->
+
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P131_Amount_of_time_required_to_service_equipment_(per_procedure)">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P13_Number_of_occurrences_of_unplanned_equipment_downtime,_Amount_of_unplanned_equipment_downtime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P13_Number_of_occurrences_of_unplanned_equipment_downtime,_Amount_of_unplanned_equipment_downtime -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P13_Number_of_occurrences_of_unplanned_equipment_downtime,_Amount_of_unplanned_equipment_downtime">
         <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P1_Number_of_occurrence_of_disruptions_&amp;_Amount_of_time_lost_to_disruptions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P141_Is_the_Standard_Work_In_Process_(market_place)_full? -->
+
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P141_Is_the_Standard_Work_In_Process_(market_place)_full?">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-P14_Number_of_disruptions_due_to_material_shortages,_amount_of_interruption_time_for_material_shortages"/>
     </owl:DatatypeProperty>
     
 
@@ -603,10 +585,19 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T21_Has_takt_time_been_defined?_(Yes/No) -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T1_Lot_(batch)_size -->
 
-    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T21_Has_takt_time_been_defined?_(Yes/No)">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Inventory_due_to_process_delay"/>
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T1_Lot_(batch)_size">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T21_Has_takt_time_been_defined?_(Yes_or_No) -->
+
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T21_Has_takt_time_been_defined?_(Yes_or_No)">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Are_all_cycle_time_less_than_or_equal_to_takt_time_(worker_and_machine)"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -615,7 +606,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T221_Has_this_been_achieved?_(Yes/No) -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T221_Has_this_been_achieved?_(Yes/No)">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Difference_between_production_cycle_time_and_takt_time"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Percentage_produced_to_takt_time"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -624,7 +615,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T222_Has_this_been_achieved?_(Yes/No) -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T222_Has_this_been_achieved?_(Yes/No)">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Difference_between_production_cycle_time_and_takt_time"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Percentage_produced_to_takt_time"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -633,8 +624,17 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T223_Is_average_cycle_time_less_than_takt_time_in_desired_time_interval? -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T223_Is_average_cycle_time_less_than_takt_time_in_desired_time_interval?">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Difference_between_production_cycle_time_and_takt_time"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T22_Percentage_produced_to_takt_time"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Are_all_cycle_time_less_than_or_equal_to_takt_time_(worker_and_machine) -->
+
+    <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T2_Are_all_cycle_time_less_than_or_equal_to_takt_time_(worker_and_machine)">
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM113_Difference_between_mean_throughput_time_and_customer&apos;s_expected_lead_time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -642,7 +642,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T31_Has_this_information_been_provided?_(Yes/No) -->
 
     <owl:DatatypeProperty rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T31_Has_this_information_been_provided?_(Yes/No)">
-        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Inventory_due_to_run_size_delay"/>
+        <rdfs:subPropertyOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#PM-T3_Run_Size"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -681,8 +681,17 @@
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D11_Reduce_time_operators_spend_on_non-value_added_tasks_at_each_station">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D1_Eliminate_operators&apos;_waiting_on_machines"/>
-        <owl:disjointWith rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_/_station"/>
+        <owl:disjointWith rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_or_station"/>
         <ad1:designParameter xml:lang="en">Machines &amp; stations designed to run autonomously</ad1:designParameter>
+    </owl:Class>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_or_station -->
+
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_or_station">
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D1_Eliminate_operators&apos;_waiting_on_machines"/>
+        <ad1:designParameter xml:lang="en">Workers trained to operate multiple stations</ad1:designParameter>
     </owl:Class>
     
 
@@ -699,7 +708,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D2_Eliminate_wasted_motion_of_operators -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D2_Eliminate_wasted_motion_of_operators">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor_content"/>
         <ad1:designParameter xml:lang="en">Design of workstations / work-loops to facilitate operator tasks</ad1:designParameter>
     </owl:Class>
     
@@ -708,7 +717,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-I1_Improve_effectiveness_of_production_managers -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-I1_Improve_effectiveness_of_production_managers">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor_content"/>
         <ad1:designParameter xml:lang="en">Self directed work teams (horizontal organization)</ad1:designParameter>
     </owl:Class>
     
@@ -717,7 +726,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-I2_Eliminate_information_disruptions -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-I2_Eliminate_information_disruptions">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor_content"/>
         <ad1:designParameter xml:lang="en">Seamless information flow (visual factory)</ad1:designParameter>
     </owl:Class>
     
@@ -730,7 +739,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -753,8 +762,8 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P121_Reduce_variability_of_task_completion_time -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P121_Reduce_variability_of_task_completion_time">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output"/>
-        <ad1:designParameter>Standard work methods to provide repeatable processing time</ad1:designParameter>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel"/>
+        <ad1:designParameter>Standard work across all shifts and personnel</ad1:designParameter>
     </owl:Class>
     
 
@@ -762,7 +771,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P122_Ensure_availability_of_workers -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P122_Ensure_availability_of_workers">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
@@ -777,15 +786,15 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P123_Do_not_interrupt_production_for_worker_allowances -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P123_Do_not_interrupt_production_for_worker_allowances">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel"/>
         <ad1:designParameter>Mutual relief system with cross-trained workers</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P1_Minimize_production_disruptions"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -833,7 +842,7 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P14_Ensure_material_availability_even_though_fallout_exists"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Maintenance of equipment reliability</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Total Productive Maintenance (TPM)</ad1:designParameter>
     </owl:Class>
     
 
@@ -971,7 +980,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q1_Operate_processes_within_control_limits -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q1_Operate_processes_within_control_limits">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
@@ -984,7 +993,7 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Reduction of process noise</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Elimination of assignable causes of variation</ad1:designParameter>
     </owl:Class>
     
 
@@ -992,14 +1001,14 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q2_Center_process_mean_on_the_target -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q2_Center_process_mean_on_the_target">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Elimination of assignable causes of variation</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Process parameter adjustment</ad1:designParameter>
     </owl:Class>
     
 
@@ -1008,17 +1017,17 @@
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q31_Reduce_noise_in_process_inputs">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output"/>
-        <owl:disjointWith rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Reduce_impact_of_input_noise_on_process_output"/>
+        <owl:disjointWith rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Repeatable_process_output"/>
         <ad1:designParameter xml:lang="en">Convertion of common causes into assignable causes</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Reduce_impact_of_input_noise_on_process_output -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Repeatable_process_output -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Reduce_impact_of_input_noise_on_process_output">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q32_Repeatable_process_output">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output"/>
-        <ad1:designParameter xml:lang="en">Robust process design</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Standard process parameters (standard work designed for process specifications)</ad1:designParameter>
     </owl:Class>
     
 
@@ -1026,8 +1035,8 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-Q3_Reduce_variation_in_process_output">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications"/>
-        <ad1:designParameter xml:lang="en">Process parameter adjustment</ad1:designParameter>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications"/>
+        <ad1:designParameter xml:lang="en">Reduction of process noise</ad1:designParameter>
     </owl:Class>
     
 
@@ -1048,7 +1057,7 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-R113_Identify_what_the_disruption_is"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Increased operator sampling rate of equipment status</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Alarm when actual quantity produced is not meeting schedule</ad1:designParameter>
     </owl:Class>
     
 
@@ -1182,37 +1191,10 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T1_Reduce_lot_delay -->
-
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T1_Reduce_lot_delay">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T4_Reduce_transportation_delay"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T5_Reduce_systematic_operational_delays"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s)"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Reduction of transfer batch size (single-piece flow)</ad1:designParameter>
-    </owl:Class>
-    
-
-
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T221_Ensure_that_automatic_cycle_time_less_than_or_equal_tak_time -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T221_Ensure_that_automatic_cycle_time_less_than_or_equal_tak_time">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
@@ -1227,7 +1209,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T222_Ensure_that_manual_cycle_time_less_than_or_equal_takt_time -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T222_Ensure_that_manual_cycle_time_less_than_or_equal_takt_time">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
@@ -1242,23 +1224,53 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T223_Ensure_level_cycle_time_mix -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T223_Ensure_level_cycle_time_mix">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time"/>
         <ad1:designParameter>Stagger production of parts with different cycle times</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s)"/>
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time">
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Ensure_that_part_arrival_rate_is_equal_to_service_rate_(r_a_is_r_s)"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Pace_part_arrivals_to_takt_time"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Subsystem enabled to meet the desired takt time (design and operation)</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">System (cell) designed to meet takt time</ad1:designParameter>
+    </owl:Class>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Pace_part_arrivals_to_takt_time -->
+
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Pace_part_arrivals_to_takt_time">
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay"/>
+        <ad1:designParameter xml:lang="en">Information sytem designed to meet takt time</ad1:designParameter>
+    </owl:Class>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay -->
+
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay">
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T3_Reduce_run_size_delay"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T4_Reduce_transportation_delay"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ad1:designParameter xml:lang="en">Manufacturing System designed to meet the takt time</ad1:designParameter>
     </owl:Class>
     
 
@@ -1268,7 +1280,7 @@
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T32_Produce_in_sufficiently_small_run_sizes">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T3_Reduce_run_size_delay"/>
         <owl:disjointWith rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T31_Provide_knowledge_of_demanded_product_mix_(part_types_and_quantities)"/>
-        <ad1:designParameter xml:lang="en">Design equick changeover for material handling and equipment</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Quick changeover for material handling and equipment</ad1:designParameter>
     </owl:Class>
     
 
@@ -1300,9 +1312,9 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR11_Maximize_sales_revenue"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1331,7 +1343,7 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Throughput time variation reduction</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Manufacturing System Design for consistent output</ad1:designParameter>
     </owl:Class>
     
 
@@ -1340,7 +1352,7 @@
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR11_Maximize_sales_revenue"/>
-        <ad1:designParameter xml:lang="en">Mean throughput time reduction</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Design for delay-time reduction</ad1:designParameter>
     </owl:Class>
     
 
@@ -1355,19 +1367,19 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR12_Minimize_manufacturing_costs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Production to maximize customer satisfaction</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Manufacturing system designed for customer satisfaction</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor_content -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor_content">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR12_Minimize_manufacturing_costs"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor_content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1376,16 +1388,16 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR123_Minimize_facilities_cost"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Elijmination of non-value adding manual tasks</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Design of direct labor tasks</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor_content -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR122_Reduce_waste_in_indirect_labor_content">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR12_Minimize_manufacturing_costs"/>
-        <ad1:designParameter xml:lang="en">Reduction of indirect labor tasks</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Design of Indirect labor tasks</ad1:designParameter>
     </owl:Class>
     
 
@@ -1394,7 +1406,7 @@
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR123_Minimize_facilities_cost">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR12_Minimize_manufacturing_costs"/>
-        <ad1:designParameter xml:lang="en">Reduction of consumed floor space</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Linked Cell System Design and facility selection methodology</ad1:designParameter>
     </owl:Class>
     
 
@@ -1406,7 +1418,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_production_system_lifecycle"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_manufacturing_system_lifecycle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ad1:designParameter xml:lang="en">Elimination of non-value adding sources of cost</ad1:designParameter>
@@ -1414,11 +1426,11 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_production_system_lifecycle -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_manufacturing_system_lifecycle -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_production_system_lifecycle">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_manufacturing_system_lifecycle">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR1_Maximize_long-term_return_on_investment"/>
-        <ad1:designParameter xml:lang="en">Investment based on a long term strategy</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Investment over system lifecycle</ad1:designParameter>
     </owl:Class>
     
 
@@ -1426,16 +1438,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR1_Maximize_long-term_return_on_investment -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR1_Maximize_long-term_return_on_investment">
-        <ad1:designParameter xml:lang="en">Manufacturing system design</ad1:designParameter>
-    </owl:Class>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_/_station -->
-
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D12_Enable_worker_to_operate_more_than_one_machine_/_station">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D1_Eliminate_operators&apos;_waiting_on_machines"/>
-        <ad1:designParameter xml:lang="en">Workers trained to operate multiple stations</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Manufacturing system design (MSD)</ad1:designParameter>
     </owl:Class>
     
 
@@ -1443,7 +1446,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D1_Eliminate_operators&apos;_waiting_on_machines -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D1_Eliminate_operators&apos;_waiting_on_machines">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor_content"/>
         <ad1:designParameter xml:lang="en">Human-Machine separation</ad1:designParameter>
     </owl:Class>
     
@@ -1459,8 +1462,8 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D23_Minimize_wasted_motion_in_operators&apos;_work_tasks"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Ergonomic interface between the worker machine and fixture</ad1:designParameter>
         <rdfs:comment xml:lang="en">coupledTo is not working for FR-D23</rdfs:comment>
+        <ad1:designParameter xml:lang="en">Standard tools/equipment located at each station (5S)</ad1:designParameter>
     </owl:Class>
     
 
@@ -1469,7 +1472,7 @@
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D23_Minimize_wasted_motion_in_operators&apos;_work_tasks">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D2_Eliminate_wasted_motion_of_operators"/>
-        <ad1:designParameter xml:lang="en">Standard tools / equipment located at each station (5S)</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Ergonomic interface between the worker, machine, and fixture</ad1:designParameter>
     </owl:Class>
     
 
@@ -1477,7 +1480,7 @@
     <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D3_Eliminate_operators&apos;_waiting_on_other_operators -->
 
     <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-D3_Eliminate_operators&apos;_waiting_on_other_operators">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor"/>
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR121_Reduce_waste_in_direct_labor_content"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
@@ -1489,44 +1492,14 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s) -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T1_Reduce_lot_(batch)_delay -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s)">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s)"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Ensure_that_part_arrival_rate_is_equal_to_service_rate_(r_a_is_r_s)"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Definition or grouping of customers to achieve takt times within an ideal range</ad1:designParameter>
-    </owl:Class>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Ensure_that_part_arrival_rate_is_equal_to_service_rate_(r_a_is_r_s) -->
-
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Ensure_that_part_arrival_rate_is_equal_to_service_rate_(r_a_is_r_s)">
-        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s)"/>
-        <ad1:designParameter xml:lang="en">Arrival of parts at downstream operations according to pace of customer demand</ad1:designParameter>
-    </owl:Class>
-    
-
-
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s) -->
-
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay_(caused_by_r_a_less_than_r_s)">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T1_Reduce_lot_(batch)_delay">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T3_Reduce_run_size_delay"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1535,7 +1508,34 @@
                 <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T4_Reduce_transportation_delay"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ad1:designParameter xml:lang="en">Production designed for the takt time</ad1:designParameter>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T5_Reduce_systematic_operational_delays"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ad1:designParameter xml:lang="en">Single-piece flow cell design</ad1:designParameter>
+    </owl:Class>
+    
+
+
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s)_(available_time_per_shift_divided_by_average_damand_per_shift) -->
+
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s)_(available_time_per_shift_divided_by_average_damand_per_shift)">
+        <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T2_Reduce_process_delay"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Pace_part_arrivals_to_takt_time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ad1:designParameter xml:lang="en">Definition or grouping of customers to achieve takt times within an ideal range</ad1:designParameter>
     </owl:Class>
     
 
@@ -1562,13 +1562,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people/automation)_don&apos;t_interfere_with_one_another"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people_or_automation)_don&apos;t_interfere_with_one_another"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#coupledTo"/>
-                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people/automation)_don&apos;t_interfere_with_one_another"/>
+                <owl:someValuesFrom rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people_or_automation)_don&apos;t_interfere_with_one_another"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ad1:designParameter xml:lang="en">Subsystems and equipment configured to separate support and production access req&apos;ts</ad1:designParameter>
@@ -1576,18 +1576,18 @@
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people/automation)_don&apos;t_interfere_with_one_another -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people_or_automation)_don&apos;t_interfere_with_one_another -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people/automation)_don&apos;t_interfere_with_one_another">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people_or_automation)_don&apos;t_interfere_with_one_another">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T5_Reduce_systematic_operational_delays"/>
-        <ad1:designParameter xml:lang="en">Ensure coordination and separation of production work patterns</ad1:designParameter>
+        <ad1:designParameter xml:lang="en">Ensure coordination and separation of manufacturing work patterns</ad1:designParameter>
     </owl:Class>
     
 
 
-    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people/automation)_don&apos;t_interfere_with_one_another -->
+    <!-- https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people_or_automation)_don&apos;t_interfere_with_one_another -->
 
-    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people/automation)_don&apos;t_interfere_with_one_another">
+    <owl:Class rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people_or_automation)_don&apos;t_interfere_with_one_another">
         <rdfs:subClassOf rdf:resource="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T5_Reduce_systematic_operational_delays"/>
         <ad1:designParameter xml:lang="en">Ensure coordination and separation of support work patterns</ad1:designParameter>
     </owl:Class>
@@ -1614,7 +1614,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P11_Ensure_availability_of_relevant_production_information"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Ensure_predictable_worker_output"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P12_Communicate_problems_to_the_right_personnel"/>
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P13_Ensure_predictable_equipment_output"/>
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-P14_Ensure_material_availability_even_though_fallout_exists"/>
         </owl:members>
@@ -1682,15 +1682,15 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Ensure_that_production_cycle_time_equals_takt_time"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s)"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Ensure_that_part_arrival_rate_is_equal_to_service_rate_(r_a_is_r_s)"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T22_Pace_manufacturing_system_to_takt_time"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T23_Pace_part_arrivals_to_takt_time"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T21_Define_takt_time(s)_(available_time_per_shift_divided_by_average_damand_per_shift)"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_target_design_specifications"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR111_Manufacture_products_to_design_specifications"/>
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR112_Deliver_products_on_time"/>
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR113_Meet_customer_expected_lead_time"/>
         </owl:members>
@@ -1700,20 +1700,20 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR11_Maximize_sales_revenue"/>
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR12_Minimize_manufacturing_costs"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_production_system_lifecycle"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR13_Minimize_investment_over_manufacturing_system_lifecycle"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T51_Ensure_that_support_resources_don&apos;t_interfere_with_production_resources"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people/automation)_don&apos;t_interfere_with_one_another"/>
-            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people/automation)_don&apos;t_interfere_with_one_another"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T52_Ensure_that_production_resources_(people_or_automation)_don&apos;t_interfere_with_one_another"/>
+            <rdf:Description rdf:about="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd#FR-T53_Ensure_that_support_resources_(people_or_automation)_don&apos;t_interfere_with_one_another"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

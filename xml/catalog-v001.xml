@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1519867406468" name="http://www.semanticweb.org/foley/ontologies/2016/9/msdd" uri="msdd-attempt1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519867406468" name="https://repository.cs.ru.is/svn/foley-publish/ontologyAD/xml/msdd" uri="msdd.owl"/>
+    </group>
+</catalog>
